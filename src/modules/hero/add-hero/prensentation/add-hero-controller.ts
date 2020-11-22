@@ -1,6 +1,6 @@
-import { ValidationError } from "../../../shared/errors/validation-error";
-import { badRequest, serverError, ok } from "../../../shared/helpers/http";
-import { Controller, HttpRequest, HttpResponse, Validator } from "../../../shared/protocols";
+import { ValidationError } from "../../../../shared/errors/validation-error";
+import { badRequest, serverError, ok } from "../../../../shared/helpers/http";
+import { Controller, HttpRequest, HttpResponse, Validator } from "../../../../shared/protocols";
 import { Hero } from "../model";
 
 export class AddHeroController implements Controller {

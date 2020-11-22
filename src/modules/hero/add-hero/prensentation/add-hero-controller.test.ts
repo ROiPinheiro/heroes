@@ -1,8 +1,9 @@
 import * as faker from "faker";
-import { ValidationError } from "../../../shared/errors/validation-error";
-import { HttpRequest } from "../../../shared/protocols";
-import { ValidatorSpy } from "../../../shared/test/validation-spy";
-import { AddHeroController, Hero } from "./add-hero-controller";
+import { ValidationError } from "../../../../shared/errors/validation-error";
+import { HttpRequest } from "../../../../shared/protocols";
+import { ValidatorSpy } from "../../../../shared/test/validation-spy";
+import { Hero } from "../model";
+import { AddHeroController } from "./add-hero-controller";
 
 const makeSut = () => {
   const validationSpy = new ValidatorSpy();
